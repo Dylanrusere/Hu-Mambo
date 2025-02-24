@@ -959,6 +959,11 @@ footer{
     }
 }
 
+.fa-location-dot, .fa-phone-volume, .fa-paper-plane{
+    color: #abd050;
+    font-size: 25px;
+}
+
 .link_head{
     font-weight: 600;
 }
