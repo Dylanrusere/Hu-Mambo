@@ -348,8 +348,124 @@ header .main_nav li i{
     }
 }
 
+/* ----- ---- */
+#hero{
+    width: 100%;
+    height: 100vh;
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero_container{
+    margin: 0 8%;
+}
+
+.hero-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: 2s ease-in-out;
+    transform: translateX(-3000px);
+}
+
+.overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.26);
+      z-index: 0;
+      /* display: none; */
+      transition: 0.3s ease-in-out;
+}
+
+/* .hero-item:hover .overlay{
+    display: block;
+} */
+
+.hero-item.active_hero {
+    opacity: 1;
+    transition: 1s ease-in-out;
+    transform: translateX(0px);
+}
+
+.hero-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: flex-start;
+
+    @media(max-width:730px){
+        margin-left: 3%;
+    }
+
+    @media(max-width:615px){
+        margin-left: 4%;
+    }
+
+    @media(max-width:515px){
+        margin-left: 5%;
+    }
+
+    @media(max-width:450px){
+        margin-left: 7%;
+    }
+
+    @media(max-width:400px){
+        margin-left: 9%;
+    }
+
+    @media(max-width:350px){
+        margin-left: 11%;
+    }
+
+    @media(max-width:320px){
+        margin-left: 13%;
+    }
+
+    @media(max-width:300px){
+        margin-left: 15%;
+    }
+}
+
+.hero-controls button {
+    width: 20px;
+    height: 7px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f2f2f2;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+
+.hero-controls button.active_hero {
+    width: 60px;
+    background-color: #1e5086;
+
+    @media(max-width:800px){
+        width: 40px;
+    }
+
+    @media(max-width:690px){
+        width: 35px;
+    }
+}
+
 /* Hero Section */
-#hero_section{
+#hero_section_hero{
     width: 100%;
     height: 100vh;
     display: flex;
@@ -731,7 +847,7 @@ footer{
 }
 
 .mental_health_container{
-    background-color: #abd050;
+    background-color: #45956b;
 }
 
 .art_container{
