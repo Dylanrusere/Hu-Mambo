@@ -709,6 +709,11 @@ footer{
     margin: 5% 0 10% 0;
 }
 
+.services_head{
+    font-size: 30px;
+    font-weight: 600;
+}
+
 .services_grid_container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
