@@ -721,13 +721,21 @@ footer{
 }
 
 .blog_card_container{
-    background-color: #d13972;
+    background-color: #d9585f;
     padding: 10% 5%;
     border-radius: 20px;
 
     @media(max-width:750px){
         padding: 5% 3%;
     }
+}
+
+.mental_health_container{
+    background-color: #abd050;
+}
+
+.art_container{
+    background-color: #f1ab5c;
 }
 
 .green_blog_btn{
