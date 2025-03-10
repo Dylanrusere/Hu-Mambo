@@ -21,13 +21,20 @@ window.addEventListener("scroll", function () {
 
 
   // Ham Menu
-const hamMenu = document.querySelector(".menu");
-const offMenu = document.querySelector(".offScreenMenu");
-
-hamMenu.addEventListener("click", () => {
-    hamMenu.classList.toggle("active");
-    offMenu.classList.toggle("active");
-});
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+  
+  menuToggle.addEventListener("click", function () {
+      navLinks.classList.toggle("show");
+  
+      // Toggle between Hamburger (☰) and Close (✖) icon
+      if (navLinks.classList.contains("show")) {
+          menuToggle.textContent = "✖";
+      } else {
+          menuToggle.textContent = "☰";
+      }
+  });
+  
 
 // Hero Section
 // Hero Section Carousel
