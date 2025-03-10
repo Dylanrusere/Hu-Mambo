@@ -719,6 +719,17 @@ footer{
     grid-template-columns: repeat(3, 1fr);
     gap: 5%;
     margin-top: 5%;
+
+    @media(max-width:850px){
+        grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 15%;
+    }
+
+    @media(max-width:500px){
+        grid-template-columns: 1fr;
+        margin-bottom: 50%;
+        gap: 2%;
+    }
 }
 
 .service_card_container{
@@ -789,27 +800,16 @@ footer{
 }
 
 .conspirators_grid_container{
-    display: grid;
-    grid-template-columns: 0.5fr 1fr;
-    gap: 3%;
     
     @media(max-width:800px){
-        grid-template-columns: 1fr;
         margin-top: 5%;
     }
 }
 
 .conspirators_profiles_grid_container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3%;
 
     @media(max-width:800px){
         margin-top: 5%;
-    }
-    
-    @media(max-width:500px){
-        grid-template-columns: 1fr;
     }
 }
 
@@ -820,12 +820,16 @@ footer{
 }
 
 .profile_img_container{
-    width: 100%;
+    width: 30%;
 
     img{
         width: 100%;
         border-radius: 1000px;
     }
+}
+
+.position_position{
+    text-align: center;
 }
 
 .conspirators_conspirators{
