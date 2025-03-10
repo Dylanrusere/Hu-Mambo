@@ -158,6 +158,10 @@ header.sticky .logo_img{
     border: none;
     cursor: pointer;
     transition: 0.3s ease;
+
+    @media(max-width:600px){
+        font-size: 24px;
+    }
 }
 
 /* Show menu when active */
