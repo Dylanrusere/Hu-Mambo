@@ -672,10 +672,10 @@ footer{
 #blog{
     width: 100%;
     height: 100vh;
-    padding: 0 0 800px 0;
+    padding: 0 0 600px 0;
 
     @media(max-width:750px){
-        padding: 0 0 1200px 0;
+        padding: 0 0 1000px 0;
     }
 
     @media(max-width:550px){
@@ -687,7 +687,7 @@ footer{
     }
 
     @media(max-width:480px){
-        padding: 0 0 1700px 0;
+        padding: 0 0 1650px 0;
     }
 
     @media(max-width:360px){
@@ -700,22 +700,10 @@ footer{
 }
 
 .blog_overall_heading{
-    padding: 10% 0 3% 0;
+    padding: 0 3%;
     font-weight: 600;
     font-size: 40px;
     text-align: center;
-
-    @media(max-width:750px){
-        padding: 20% 0 3% 0;
-    }
-
-    @media(max-width:450px){
-        padding: 30% 0 3% 0;
-    }
-
-    @media(max-width:350px){
-        padding: 40% 0 3% 0;
-    }
 }
 
 .blog_grid_container{
@@ -1033,4 +1021,12 @@ form button{
 /* Overall Styles */
 .overall_container{
     margin: 0 5%;
+}
+
+.spacing_div{
+    height: 10vh;
+}
+
+.expo{
+    height: 20vh;
 }
